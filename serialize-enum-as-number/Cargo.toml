@@ -1,0 +1,14 @@
+[package]
+name = "serialize-enum-as-number"
+version = "0.1.0"
+authors = ["Benjamin Lee <bnllee@ucdavis.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0"
+# Provides a derive macro to derive Serde's `Serialize` and `Deserialize`
+# traits in a way that delegates to the underlying repr of a C-like enum.
+serde_repr = "0.1"
+serde_json = "1.0"

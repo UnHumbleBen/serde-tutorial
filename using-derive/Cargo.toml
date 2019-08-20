@@ -1,0 +1,19 @@
+[package]
+name = "using-derive"
+version = "0.1.0"
+authors = ["Benjamin Lee <bnllee@ucdavis.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# "1.0" is a semver version requirement. It is interpreted as "^1.0" which is
+# equivalent to all versions >= 1.0.0 < 2.0.0. The caret requriements
+# documentation can be found at https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#caret-requirements
+# Specifies the "derive" feature to use the "serde_derive" crate, which
+# provides the derive(Serialize, Deserialize) macros.
+serde = { version = "1.0", features = ["derive"] }
+
+# Serde-based dependencies needs to be compatible with serde 1.0.
+serde_json = "1.0"

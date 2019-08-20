@@ -1,0 +1,22 @@
+[workspace]
+
+members = [
+    "using-derive",
+    "attributes",
+    "custom-serialization",
+    "the-visitor-trait",
+    "enum-representations",
+    "default-value-for-a-field",
+    "struct-flattening",
+    "handwritten-generic-type-bounds",
+    "implement-deserialize-for-a-custom-map-type",
+    "phantom-data",
+    "processing-an-array-of-values-without-buffering-into-a-vec",
+    "serialize-enum-as-number",
+    "serialize-fields-as-camelcase",
+    "skip-serializing-field",
+    "deriving-de-serialize-for-type-in-a-different-crate",
+    "manually-implementing-deserialize-for-a-struct",
+    "discarding-data"
+]
+
